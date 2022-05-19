@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+        /* 
+        1) 10+10 
+        2) + строчные 10 = 2010
+        */
+        let a = 10 + 10 + "10"
+        console.log(a)
+        /* 
+        1) 10 + строчные 10 
+        2) + 10 = 101010
+        */
+        let b = 10 + "10" + 10
+        console.log(b)
+        /* 
+        1) 10+10
+        2) +"10" превращается в строчное положительное число, за счет "+", т.к. он придает строчке числовое значение
+        3) 10+10+10
+        4) 30
+        */
+        let c = 10 + 10 + +"10"
+        console.log(c)
+        /* 
+        1) "" внутри строчки находится ничего, значит выйдет 0(пустота) в строку, - стоит для придачи строке числового значения = -0
+        2) 10 нужно разделить на -0
+        3) = бесконечность
+        */
+        let d = 10 / -""
+        console.log(d)
+        /*
+        1) из-за запятой, а не точки в числе "2,5" ничего не получится посчитать
+        */
+        let e = 10 / +"2,5"
+        console.log(e)
+
+    </script>
+</body>
+
+</html>
